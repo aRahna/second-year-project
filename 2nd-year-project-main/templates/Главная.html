@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="keywords" content="Результат">
+        <meta name="description" content="">
+        <meta name="page_type" content="np-template-header-footer-from-plugin">
+        <title>Главная</title>
+        <link rel="stylesheet" href="/static/nicepage.css">
+        <link rel="stylesheet" href="/static/Главная.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+        <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+        <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+        <script type=text/javascript>
+            $(function() {
+              $('a#process_input').bind('click', function() {
+                $.getJSON('/_background_process', {
+                    order: $('input[name="order"]').val()
+                }, function(data) {
+                  $("#result1").text(data.result[0]);
+                  $("#result2").text(data.result[1]);
+                  $("#result3").text(data.result[2]);
+                  $("#result4").text(data.result[3]);
+
+                  $("#result5").text(data.result[4]);
+                  $("#result6").text(data.result[5]);
+                  $("#result7").text(data.result[6]);
+                  $("#result8").text(data.result[7]);
+
+                  $("#result9").text(data.result[8]);
+                  $("#result10").text(data.result[9]);
+                });
+                return false;
+              });
+            });
+        </script>
+        <meta property="og:title" content="AI стишки (нет?)">
+        <meta property="og:description" content="Trade offer: ты мне слово, я тебе текст">
+        <meta property="og:image" content="https://rhyme.nicepage.io/images/3875534.png">
+        <meta property="og:url" content="https://rhyme.nicepage.io/">
+        <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+
+        <script type="application/ld+json">{
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "rhyme",
+            "logo": "images/3875534.png?rand=2836",
+            "sameAs": [
+                    "t.me/wendy_pann",
+                    "github.com/aRahna",
+                    "vk.com/sloth11"
+            ]
+    }</script>
+        <meta name="theme-color" content="#539092">
+    </head>
+    <body class="u-body u-xl-mode">
+    <!--
+                    Почему-то тут все поломалось, но раньше был заголовок и 3 страницы
+    <header class="u-clearfix u-custom-color-1 u-header u-sticky u-sticky-f82d u-header" id="sec-08b4">
+        <div class="u-clearfix u-sheet u-valign-middle-xs u-sheet-1">
+            <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1" data-responsive-from="MD">
+                <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700; text-transform: uppercase;">
+                    <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-borders u-custom-color u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base">
+                        <svg class="u-svg-link" viewBox="0 0 24 24"></svg>
+                        <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect y="1" width="16" height="2"></rect>
+                                <rect y="7" width="16" height="2"></rect>
+                                <rect y="13" width="16" height="2"></rect>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="u-custom-menu u-nav-container">
+
+
+                    <ul class="u-nav u-spacing-30 u-unstyled u-nav-1">
+                        <li class="u-nav-item">
+                            <a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-hover-grey-40 u-text-palette-1-dark-2" href="Главная.html" style="padding: 10px 38px;">Главная</a></li>
+                        <li class="u-nav-item">
+                            <a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-hover-grey-40 u-text-palette-1-dark-2" href="О-проекте.html" style="padding: 10px 38px;">О проекте</a></li>
+                    </ul>
+                </div>
+                <div class="u-custom-menu u-nav-container-collapse">
+                    <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                        <div class="u-inner-container-layout u-sidenav-overflow">
+                            <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Главная.html" style="padding: 10px 38px;">Главная</a></li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="О-проекте.html" style="padding: 10px 38px;">О проекте</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+                </div>
+
+        <style class="u-sticky-style" data-style-id="f82d">.u-sticky-fixed.u-sticky-f82d:before, .u-body.u-sticky-fixed .u-sticky-f82d:before {
+    borders: top right bottom left !important
+    }</style>
+    </header>-->
+        <section class="u-clearfix u-section-1" id="sec-1071">
+            <div class="u-clearfix u-sheet u-sheet-1">
+                <p class="u-align-center u-text u-text-default u-text-1">
+                    Привет! Ты находишься на странице бота-рифмоплета.<br>Выбери цифру от 2 до 6 (чем больше, тем больше похоже на осознанный текст).<br>Он придумает стих и напечатает его на этой же странице :)
+                    <br><br>пока составление стиха по слову не реализовано
+                </p>
+            </div>
+        </section>
+        <section class="u-clearfix u-section-2" id="sec-8bad">
+            <div class="u-clearfix u-sheet u-sheet-1">
+                <!--
+                <div class="u-form u-form-1">
+                    <form action="#" method="POST" class="u-clearfix u-form-custom-backend u-form-horizontal u-form-spacing-10 u-inner-form" source="custom" name="form" style="padding: 10px;" redirect="true">
+                        <div class="u-form-group u-form-name u-label-none">
+                            <label for="name-9b51" class="u-form-control-hidden u-label"></label>
+                            <input type="text" placeholder="введите слово" id="name-9b51" name="word" class="u-border-1 u-border-palette-2-dark-1 u-input u-input-rectangle u-radius-50 u-white u-input-1" required="">
+                            <input type="number" step="1" min=2 max=6 id="order_input" name="order" class="form-control" aria-label="Text input with segmented dropdown button">
+                        </div>
+                        <div class="u-align-center u-form-group u-form-submit u-label-none">
+                            <input type="submit" value="submit" class="u-form-control-hidden">
+                            <a href="Результат.html" class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-radius-50 u-btn-1">Отправить</a>
+                        </div>
+                        <div class="u-form-send-message u-form-send-success">Отправлено!</div>
+                        <div class="u-form-send-error u-form-send-message"> Отправка не удалась. Пожалуйста, исправьте ошибки и попробуйте еще раз. </div>
+                        <input type="hidden" value="" name="recaptchaResponse">
+                    </form>
+                </div>
+                -->
+                <div class="input-group u-form u-form-1 u-align-center">
+                    <div class="input-group-prepend">
+                        <input type="number" step="1" min=2 max=6 id="order_input" name="order" class="form-control" aria-label="Text input with segmented dropdown button">
+                        <a href ="#" id="process_input"><button class="btn btn-outline-secondary">Генерировать</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="u-clearfix u-section-2 u-align-center">
+            <p class="finalResult u-align-center u-text" id="result1"></p>
+            <p class="finalResult u-align-center u-text" id="result2"></p>
+            <p class="finalResult u-align-center u-text" id="result3"></p>
+            <p class="finalResult u-align-center u-text" id="result4"></p>
+            <br><br>
+            <p class="finalResult u-align-center u-text" id="result5"></p>
+            <p class="finalResult u-align-center u-text" id="result6"></p>
+            <p class="finalResult u-align-center u-text" id="result7"></p>
+            <p class="finalResult u-align-center u-text" id="result8"></p>
+            <br><br>
+            <p class="finalResult u-align-center u-text" id="result9"></p>
+            <p class="finalResult u-align-center u-text" id="result10"></p>
+        </section>
+
+        <section class="u-align-left u-clearfix u-custom-color-1 u-section-3" id="sec-08ed">
+            <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+                <div class="fr-view u-align-left u-clearfix u-rich-text u-text u-text-1">
+                    <p>Немного о работе бота:</p>
+                    <p>- модель на основе цепей Маркова</p>
+                    <p>- корпус, на котором обучалась модель, состоит из стихов с сайта стихи.ру</p>
+                    <p>- по поводу серьезных ошибок писать на atsamigullina@edu.hse.ru</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="u-align-center-md u-align-center-sm u-align-center-xs u-clearfix u-footer u-grey-80" id="sec-0eac">
+            <div class="u-clearfix u-sheet u-sheet-1">
+                <p class="u-align-center-lg u-align-center-md u-align-center-xl u-text u-text-1">обратная связь</p>
+                <div class="u-align-left u-social-icons u-spacing-10 u-social-icons-1">
+                    <a class="u-social-url" target="_blank" data-type="Telegram" title="Telegram" href="https://t.me/wendy_pann"><span class="u-icon u-social-icon u-social-telegram u-icon-1">
+                        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-f6f9"></use></svg>
+                        <svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-f6f9"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle>
+                            <path fill="#FFFFFF" d="M18.4,53.2l64.7-24.9c3-1.1,5.6,0.7,4.7,5.3l0,0l-11,51.8c-0.8,3.7-3,4.6-6.1,2.8L53.9,75.8l-8.1,7.8
+                c-0.9,0.9-1.7,1.6-3.4,1.6l1.2-17l31.1-28c1.4-1.2-0.3-1.9-2.1-0.7L34.2,63.7l-16.6-5.2C14,57.4,14,54.9,18.4,53.2L18.4,53.2z"></path></svg></span>
+                    </a>
+                    <a class="u-social-url" target="_blank" data-type="Github" title="GitHub" href="https://github.com/aRahna"><span class="u-icon u-social-github u-social-icon u-icon-2">
+                        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-3e2a"></use></svg>
+                        <svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-3e2a"><circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle>
+                            <path fill="#FFFFFF" d="M88,51.3c0-5.5-1.9-10.2-5.3-13.7c0.6-1.3,2.3-6.5-0.5-13.5c0,0-4.2-1.4-14,5.3c-4.1-1.1-8.4-1.7-12.7-1.8
+                c-4.3,0-8.7,0.6-12.7,1.8c-9.7-6.6-14-5.3-14-5.3c-2.8,7-1,12.2-0.5,13.5C25,41.2,23,45.7,23,51.3c0,19.6,11.9,23.9,23.3,25.2
+                c-1.5,1.3-2.8,3.5-3.2,6.8c-3,1.3-10.2,3.6-14.9-4.3c0,0-2.7-4.9-7.8-5.3c0,0-5-0.1-0.4,3.1c0,0,3.3,1.6,5.6,7.5c0,0,3,9.1,17.2,6
+                c0,4.3,0.1,8.3,0.1,9.5h25.2c0-1.7,0.1-7.2,0.1-14c0-4.7-1.7-7.9-3.4-9.4C76,75.2,88,70.9,88,51.3z"></path></svg></span>
+                    </a>
+                    <a class="u-social-url" target="_blank" data-type="VK" title="VK" href="https://vk.com/sloth11"><span class="u-icon u-social-icon u-social-vk u-icon-3">
+                        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-9d89"></use></svg>
+                        <svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-9d89"><circle fill="currentColor" class="st0" cx="56.1" cy="56.1" r="55"></circle>
+                            <path fill="#FFFFFF" d="M88.2,80.7l-9.8,0.1c0,0-2.1,0.4-4.9-1.5c-3.7-2.5-7.2-9.1-9.9-8.2C60.9,72,61,77.9,61,77.9s0,1.3-0.6,1.9
+                        c-0.7,0.7-2,0.9-2,0.9H54c0,0-9.7,0.6-18.3-8.3c-9.3-9.7-17.6-29-17.6-29s-0.5-1.3,0-1.9c0.6-0.7,2.2-0.7,2.2-0.7l10.5-0.1
+                        c0,0,1,0.2,1.7,0.7c0.6,0.4,0.9,1.2,0.9,1.2s1.7,4.3,4,8.2c4.4,7.6,6.4,9.3,7.9,8.4c2.2-1.2,1.5-10.7,1.5-10.7s0-3.5-1.1-5
+                        c-0.9-1.2-2.5-1.5-3.3-1.6c-0.6-0.1,0.4-1.5,1.6-2.1c1.9-0.9,5.2-1,9.2-0.9c3.1,0,4,0.2,5.2,0.5c3.6,0.9,2.4,4.3,2.4,12.4
+                        c0,2.6-0.5,6.3,1.4,7.5c0.8,0.5,2.8,0.1,7.7-8.3c2.3-4,4.1-8.6,4.1-8.6s0.4-0.8,1-1.2s1.4-0.3,1.4-0.3l11.1-0.1c0,0,3.3-0.4,3.9,1.1
+                        c0.6,1.6-1.2,5.3-5.8,11.3c-7.4,9.9-8.3,9-2.1,14.7c5.9,5.5,7.1,8.1,7.3,8.5C93.4,80.4,88.2,80.7,88.2,80.7z"></path></svg></span>
+                    </a>
+                </div>
+                <p class="u-align-center u-text u-text-default u-text-grey-60 u-text-2">Moscow 2022</p>
+            </div>
+        </footer>
+
+    </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</html>
